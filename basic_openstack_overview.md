@@ -1,8 +1,8 @@
-### Flavor:
+### What is Flavor?
 Flavor is used to what type of instance/vm to run or launch by the user. It has some parameters like RAM, VCPU’s, RootDisk, etc.
 
 
-### VM / Instance Creation Flow in OpenStack:   
+### VM (or) Instance Creation Flow in OpenStack :   
     
 We can create instance in two ways generally.
 1. CLI (with nova boot command )and 2. From Dashboard
@@ -27,7 +27,8 @@ We can create instance in two ways generally.
 19. **NOVA -COMPUTE** generates data for hypervisor driver and executes there request on Hypervisor to **LAUNCH INSTANCE**.
 
 
- 
+**Below are the stages while running command.
+
 | Status | Task | Steps |
 ---|---|---|
 | Build| scheduling | 1-9 |
@@ -35,4 +36,3 @@ We can create instance in two ways generally.
 | Build | block device mapping | 17,18 |
 | Build | spawning | 19 |
 |Active | None |
-
