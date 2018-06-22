@@ -27,3 +27,12 @@ We can create instance in two ways generally.
 19. **NOVA -COMPUTE** generates data for hypervisor driver and executes there request on Hypervisor to **LAUNCH INSTANCE**.
 
 
+ 
+| Status | Task | Steps |
+---|---|---|
+| Build| scheduling | 1-9 |
+| Build | networking | 15,16 |
+| Build | block device mapping | 17,18 |
+| Build | spawning | 19 |
+|Active | None |
+
