@@ -4,16 +4,17 @@ Flavor is used to what type of instance/vm to run or launch by the user. It has 
 
 ### VM (or) Instance Creation Flow in OpenStack :   
     
-We can create instance in two ways generally.
-1. CLI (with nova boot command )and 2. From Dashboard
-2. When we requested for Instance first request
-3. First the request of new instance converts in to REST API request and send it to **NOVA-API**
-4. **NOVA-API** receive the request sends the request for validation auth-token and access permission to keystone.
-5. **KEYSTONE** validates the token and sends the updated roles and permissions.
+We can create instance in two ways generally, one is from CLI (with nova boot command )and second is from Dashboard(with Launch Instance)
+
+1. Dashboard or CLI gets the user credential and does the REST call to Keystone for authentication.
+2. **KEYSTONE** authenticate the credentials and generate & send back auth-token which will be used for sending request to other Components through REST-call.
+3. First the new instance **request**(*eigher CLI(with nova boot command) or DASHBOARD(with Launch Instance))* converts in to **REST API request** and send it to **NOVA-API**
+4. **NOVA-API** receive the request sends the request for validation auth-token and access permission to **KEYSTONE**
+5. **KEYSTONE** validates the token and sends the updated roles and permissions
 6. **NOVA-API** interacts with **NOVA-DATABASE** and creates initial db entry for new instance.
 7. Then after **NOVA-API** send the request to **NOVA-SCHEDULER**.
 8. **NOVA-SCHEDULER** intercuts with **NOVA-DATABASE** to find and appropriate host, returns appropriate host ID.
-9. **NOVA-SCHEDULER** send the request to nova-compute for launching instance on appropriate host.
+9. **NOVA-SCHEDULER** send the request to **NOVA-COMPUTE** for launching instance on appropriate host.
 10. **NOVA-COMPUTE** picks the request and send the request to **NOVA-CONDUCTOR** to get the information such as flavor, host ID
 11. **NOVA-CONDUCTOR** picks the request and interacts with **NOVA-DATABASE** returns the required information sends to **NOVA-COMPUTE**.
 12. **NOVA-COMPUTE** pick the required information from **NOVA-CONDUCTOR**.
