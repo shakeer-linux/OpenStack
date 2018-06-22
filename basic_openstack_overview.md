@@ -9,14 +9,9 @@ Authentication :
 Autherization : 
 * Autherization is a process to check whether authenticated user has permission to access to certain resource or service.
 
-
-|Authentication|Authorization| 
----|---|---|
-
-| Status | Task | Steps |
----|---|---|
-| Build| scheduling | 1-9 |
-
+| Authentication | Autherization |
+---|---|
+| Build| scheduling |
 | Authentication confirms your identity to grant access to the system.	| Authorization determines whether you are authorized to access the resources. |
 | It is the process of validating user credentials to gain user access.	| It is the process of verifying whether access is allowed or not. |
 | Authentication usually requires a username and a password. | Authentication factors required for authorization may vary, depending on the security level. |
