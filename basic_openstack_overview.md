@@ -9,7 +9,7 @@ Authentication :
 Autherization : 
 * Autherization is a process to check whether authenticated user has permission to access to certain resources/service.
 
-**In Simple words Authentication is to validate credentials and Authorization to access the resources.
+**In Simple words Authentication is to validate credentials and Authorization to access the resources.**
 
 | Authentication | Authorization |
 ---|---|
