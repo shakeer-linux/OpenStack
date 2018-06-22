@@ -11,7 +11,7 @@ Autherization :
 
 
 | Authentication |	Authorization |
-|---|---|---|
+---|---|---|
 
 | Authentication confirms your identity to grant access to the system.	| Authorization determines whether you are authorized to access the resources. |
 | It is the process of validating user credentials to gain user access.	| It is the process of verifying whether access is allowed or not. |
