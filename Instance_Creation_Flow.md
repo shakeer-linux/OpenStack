@@ -21,11 +21,10 @@ We can create instance in two ways generally, one is from CLI (with nova boot co
 16. **NEUTRON-SERVER** validates the auth token with keystone and **NOVA-COMPUTE** get the network information
 17. Same Again **NOVA-COMPUTE** does the REST call by passing auth token to Volume API to attache the volumes to instance
 18. **CINDER-API** Validates the token with keystone and **NOVA-COMPUTE** get the block storage information
+19. **NOVA-COMPUTE** generates data for hypervisor driver and executes there request on Hypervisor to **LAUNCH INSTANCE**.
 
-19. **NOVA -COMPUTE** generates data for hypervisor driver and executes there request on Hypervisor to **LAUNCH INSTANCE**.
 
-
-**Below are the stages while running command.
+**Below are the stages while running command**
 
 | Status | Task | Steps |
 ---|---|---|
@@ -33,4 +32,4 @@ We can create instance in two ways generally, one is from CLI (with nova boot co
 | Build | networking | 15,16 |
 | Build | block device mapping | 17,18 |
 | Build | spawning | 19 |
-|Active | None |
+| Active | None |
