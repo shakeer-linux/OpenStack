@@ -7,9 +7,11 @@ Authentication :
 * Authentication is about validating your credentials like User Name/User ID and password to verify your identity.
 
 Autherization : 
-* Autherization is a process to check whether authenticated user has permission to access to certain resource or service.
+* Autherization is a process to check whether authenticated user has permission to access to certain resources/service.
 
-| Authentication | Autherization |
+**In Simple words Authentication is to validate credentials and Authorization to access the resources.
+
+| Authentication | Authorization |
 ---|---|
 | Authentication confirms your identity to grant access to the system.	| Authorization determines whether you are authorized to access the resources. |
 | It is the process of validating user credentials to gain user access.	| It is the process of verifying whether access is allowed or not. |
