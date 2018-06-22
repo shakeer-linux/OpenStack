@@ -6,7 +6,7 @@ Flavor is used to what type of instance/vm to run or launch by the user. It has 
 Authentication : 
 * Authentication is about validating your credentials like User Name/User ID and password to verify your identity.
 
-Autherization : 
+Authorization : 
 * Autherization is a process to check whether authenticated user has permission to access to certain resources/service.
 
 | Authentication | Authorization |
