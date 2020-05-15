@@ -55,6 +55,10 @@ stack@ubuntu18:~/devstack$
 ```
 stack@ubuntu18:~/devstack$ FORCE=yes ./stack.sh
 ```
+#### Installation Completed
+
+![Image description](https://github.com/shakeer-linux/OpenStack/blob/master/Images/final-terminal-output.JPG)
+
 
 #### After Installation
 
