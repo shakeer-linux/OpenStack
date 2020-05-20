@@ -188,3 +188,7 @@ stack@ubuntu18:~/devstack$ openstack subnet list
 stack@ubuntu18:~/devstack$
 
 ```
+
+#### Dashboard
+
+![Image description](https://github.com/shakeer-linux/OpenStack/blob/master/Images/dashboard.JPG)
